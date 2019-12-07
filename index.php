@@ -14,8 +14,8 @@
 </head>
 <body>
 <!--MODAL-->
-<div class="modal fade" id="CreateTaskModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="CreateTaskModalLable" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+<div class="modal fade right" id="CreateTaskModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="CreateTaskModalLable" aria-hidden="true">
+  <div class="modal-dialog modal-full-height modal-right modal-notify modal-danger" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title" id="CreateTaskModalLable">Create Task</h1>
@@ -25,32 +25,34 @@
       </div>
       <div class="modal-body">
       <form>
-        <div class="form-row">
-          <div class="col">
+        <!--<div class="form-row">
+          <div class="col">-->
             <label for="TaskName">Task Name</label>
             <input type="text" id="TaskName" class="form-control" placeholder="Task 1...">
-          </div>
-          <div class="col">
+            <br>
+          <!--</div>
+          <div class="col">-->
             <label for="TaskDate">Task Due Date</label>
             <input type="date" id="TaskDate" class="form-control">
-          </div>
+            <br>
+          <!--</div>
         </div>
-        <br>
         <div class="form-row">
-          <div class="col">
+          <div class="col">-->
             <label for="CreateProjectName">Select Project</label>
             <Select class="form-control" id="SelectProject"></Select>
-          </div>
-          <div class="col">
+            <br>
+          <!--</div>
+          <div class="col">-->
             <label for="CreateProjectName">Create New Project</label>
-            <Input class="form-control" id="CreateProjectName"></Input>
-          </div>
-        </div>
-        <br>
+            <Input class="form-control" id="CreateProjectName" placeholder="Project1..."></Input>
+            <br>
+          <!--</div>
+        </div>-->
         <div class="form-row">
           <div class="col">
-            <label for="AdditionalInformation">Aditional Information</label>
-            <textarea rows="5" class="form-control"></textarea>
+            <label for="AdditionalInformation">Description</label>
+            <textarea rows="5" class="form-control" placeholder="This is a description..."></textarea>
           </div>
         </div>
       </div>
@@ -92,7 +94,7 @@
       <th scope="col">Project</th>
       <th scope="col">Task</th>
       <th scope="col">Due Date</th>
-      <th scope="col">Aditional Information</th>
+      <th scope="col">Description</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -131,7 +133,7 @@
       <th scope="col">Project</th>
       <th scope="col">Task</th>
       <th scope="col">Due Date</th>
-      <th scope="col">Aditional Information</th>
+      <th scope="col">Description</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
